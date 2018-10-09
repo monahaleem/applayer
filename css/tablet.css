@@ -1,0 +1,456 @@
+@media only screen and (max-width:992px) {
+
+    section{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.container{
+    width:75%;
+    max-width:993px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0;
+    
+
+}
+
+.mainMenu, nav, .logo{
+    display: flex;
+    float: none;
+    margin: 0 auto;
+    flex-direction: column;
+}
+nav .menuLinks{
+
+    width: 100%;
+    margin: 0 auto;
+    padding:0;
+    font-size:.8em;
+}
+nav .menuLinks a{
+    margin: 0 auto;
+    padding: 0;
+}
+.logo {
+    width:60%;
+    margin:.8% auto 1% auto;
+}
+ .headerContent,.leftHeader,.rightHeader{
+    float: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.leftHeader h1{
+    padding: 0 ;
+    margin: 0;
+    margin:2% auto 3% auto;
+    line-height:50px;
+    font-size: 2.5em;
+    text-align: center;
+    width: 100%;
+    float: none;
+    padding-top: 5%;
+}
+.leftHeader h5{
+    width: 100%;
+    padding: 0;
+    padding: 2% auto;
+    font-size: 1.4em;
+    text-align: center;
+    margin: 10% auto .5% auto;
+    float: none;
+}
+.rightHeader img{
+    float: none;
+    width: 65%;
+    margin: 0 auto;
+}
+
+.leftHeader .allStore{
+    display:flex;
+    width: 100%;
+    flex-direction: row;
+    margin: 6% auto 5% auto;
+}
+.allStore .store2{
+    width:33%;
+    padding:1.5% ;
+    text-align: center;
+    margin: 0 1% 2% auto;
+}
+.allStore .store1{
+    width:33%;
+    padding:1.5% ;
+    text-align: center;
+    margin: 0 auto 2% 2%;
+}
+/* section 2 */
+
+.features p{
+    font-size: 1.7em;
+    font-weight: 300;
+}
+.featureContent{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    float: none;
+}
+.leftContentFeatures{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 6% auto auto auto;
+    text-align: center;
+    float: none;
+
+}
+
+.featureContent{
+    margin: 5% auto auto auto;
+    display:flex;
+    flex-direction: column;
+    float: none;
+    width: 100%;
+
+}
+.leftContentFeatures{
+    width: 90%;
+    display: block;
+    margin: 4% auto 7% auto;
+    text-align: center;
+    float: none;
+}
+.leftContentFeatures .top, .bottom{
+    padding: 0;
+    width: 100%;  
+    display: flex; 
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    float: none;
+}
+.leftContentFeatures  h5{
+    text-align: center;
+    float: none;
+    font-size: 1.5em;
+    font-weight:700;  
+    padding: 0;
+    margin: 0;
+}
+.leftContentFeatures  i{
+    text-align: center; 
+    padding: 0;
+    margin: 2% auto;
+}
+.leftContentFeatures  p{
+    text-align: center;
+    float: none;
+    font-size: 1em;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+    margin:4% auto 6% auto;
+   
+
+}
+
+.leftContentFeatures .topLeft, .leftContentFeatures .topRight, .leftContentFeatures .bottomLeft, .leftContentFeatures .botttomRight{
+   
+    margin: 0 auto;
+    border-style: none;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    float: none;
+    width: 100%;
+    border-bottom: 1px #3333335e solid;
+}
+
+/* section 3 */
+.services,.servicesContent {
+display: flex;
+flex-direction: column-reverse;
+width: 100%;
+margin: 0 auto;
+float: none;
+position: static;
+}
+
+.leftContentServices{
+    width:80%;
+    display:flex;
+    margin-top: 77%;
+}
+.rightContentServices{
+    width: 70%;
+    display: flex;
+    text-align: center;
+    float: none;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.servicesContent .fa-rocket, .servicesContent .fa-desktop, .servicesContent .fa-html5{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* section4 how it work */
+.howItWork h2, .leftContent , .howItWork  #fa, .rightContent, .centerContent, .howItWorkContent{
+    display: flex;
+    flex-direction: column;
+    float: none;
+    justify-content: flex-start;
+    text-align: center;
+    width: 90%;
+    direction:ltr;
+    }
+    .howItWork #blot, .howItWork #blot::after, .howItWork #blot::before, #node{
+        overflow: hidden;
+        display: none;
+        border: none;
+
+    }
+.howItWorkContent p{
+    direction: ltr;
+    font-size:.8em; 
+    float: none;
+    text-align: center;
+}
+.centerContent{
+    margin: 4% auto;
+}
+.howItWork h4{
+    font-size: 1.5em;
+}
+ /* section4 our portifilio */
+ .ourPortifilio p{
+     font-size: 1.5em;
+ }
+ /* section 5 pricing */
+
+ .pricePayment, .priceContent, .pricingList{
+     display: flex;
+     flex-direction: column;
+     width: 95%;
+     margin: 0 auto;
+ }
+ .priceBasic, .pricePro, .priceAdvanced{
+     width: 95%;
+     font-weight: 500;
+ }
+ .pricePayment .priceContent p{
+     font-size: 3em;
+     font-weight: 700;
+ }
+ .priceListInformation{
+     font-size: 1.7em;
+     font-weight: 700;
+ }
+ .priceListInformation p{
+     font-size: 2 em;
+     font-weight: 700;
+ }
+ /* team member section 7 */
+ .teamMembers{
+     display:flex;
+     margin: 0 auto;
+
+ }
+ 
+ .latestBlog{
+    display:table-column;
+    margin: 0 auto;
+}
+
+.blog .latestBlog{
+    display: flex;
+    margin:15% auto;
+    width: 100%;
+    flex-direction: column;
+    padding: 10% auto;
+}
+.latesBlog1, .latesBlog2, .latesBlog3{
+    width:90%;
+    margin-top: 5%;
+    padding-top: 10%;
+    margin: 0 auto;
+   
+}
+
+
+.blog{
+    display: flex;
+    margin: 0 auto;
+    clear:both;
+
+}
+.blog .latestBlog{
+    display: flex;
+    margin: .3% auto;
+    width: 100%;
+}
+.latesBlog1, .latesBlog2, .latesBlog3{
+    width:90%;
+    margin: 0 auto;
+   
+}
+.blogImage{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.latesBlog1 img, .latesBlog2 img, .latesBlog3 img {
+    width: 100%;
+    margin: 0 auto;
+}
+ 
+.caption{
+    background-color: white;
+    width: 90%;
+    padding: 3% 2% 0 5%;
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    right: 5%;
+    
+}
+.caption a{
+    text-decoration: none;}
+.caption h6{
+    margin-bottom: 3%;
+    text-decoration: none;
+    color: #F6B20E;
+    font-family: 'Roboto Slab';
+    font-size: .9em;
+    text-align: left;
+    padding: .3% 0;
+}
+.caption p{
+    margin-top: 5%;
+    color: #333333;
+    font-family: 'Roboto Slab Light';
+    font-size: 1.1em;
+    text-align: left;
+    
+}
+.comments{
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+.comments p, .comments a{
+    color: #55545473;
+    font-size: .9em;
+    padding: .6% .2% 0 0;
+    text-align: left;
+    text-decoration: none;
+
+}
+.readMore{
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    left: 10%;
+    font-size:.7em;
+    font-weight: 600;
+    color:#333333;
+    font-family: 'Open Sans';
+    margin-top: 1%;
+}
+.readMore a{
+    border-bottom: 1px #333333 solid;
+    text-decoration: none;
+    padding-bottom:5px;
+    color: #000000;
+}
+
+
+/* contact us section */
+
+.contactUsContent{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    float: none;
+    width: 100%;
+}
+.leftContentContacts{
+
+    display:flex;
+    margin: 5% auto;
+    width: 90%; 
+  
+}
+
+.leftContentContacts  #submeit{
+width: 90%;
+}
+.rightContentContacts{
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    float: left;
+}
+.rightContentContacts a{
+width: 100%;
+
+    font-size: 1em;
+    text-align: center;
+}
+.first, .second, .third{
+    display: flex;
+    flex-direction: row;
+}
+.contactUsContent .fa-home, .contactUsContent .fa-envelope, .contactUsContent .fa-phone, .contactUsContent .fa-fax{
+display: flex;
+}
+ 
+/* download  section */
+.download, .appContent, .centerContent, .downloadApp{
+    display: flex;
+    float: none;
+    margin: 0 auto;
+    flex-direction: column;
+    width: 98%;
+    text-align: center;
+}
+.download .newsletter , .download .centerContent, .download .downloadApp{
+width: 95%;
+text-align: center;
+margin: 0;
+padding: 0;
+margin: 0 auto;
+
+}
+
+.download .centerContent img{
+    width:50%;
+}
+
+
+ /* ------------------------------- */
+
+@media only screen and (max-width:870px) {
+    .container{
+        width: 80%;
+        max-width: 870;
+    }
+
+
+@media only screen and (max-width:814px){
+.container{
+    width: 95%;
+    max-width: 814px;
+}
+}
