@@ -1,0 +1,1368 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400|Roboto+Slab:300');
+
+*{
+    /* background-color:#ffffff; */
+    font-size: 1em;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+    font-weight: unset;
+    padding: 0;
+    margin: 0 auto;
+    font-stretch:expanded;
+}
+.container{
+    width: 75%;
+    max-width:1536px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0;
+
+}
+section{
+    margin: 0 auto;
+    width: 100%;
+    display:block;
+    background-color: white;
+
+}
+
+.banner{
+    margin: 0 auto;
+    display:flex;
+    width: 100%;
+    max-width: max-content;
+    background-image: url("../images/top_banner.png");
+   background-color:  rgba(1, 10, 28, 0.8);
+    background-size: cover;
+    background-position: fixed;
+    position: fixed;
+    height:800px;
+    z-index: -2;
+}
+.mainMenu{
+    z-index: 500000;
+    position: fixed;
+    min-height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    margin:0 ;
+    padding: 0;
+    display: flex;
+
+
+}
+ nav {
+    margin:0 auto;
+    padding:0 ;
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+} 
+.logo{
+    max-width: 15%;
+    float: left;
+    display:inline-flex;
+    margin: auto 14% auto 0;
+    padding: 0;
+
+ 
+}
+ nav .menuLinks{
+    width: 85%;
+    vertical-align: middle;
+    float: left;
+
+
+ 
+}
+
+div nav .menuLinks a{
+    color: #ffffff;
+    display: inline-flex;
+    text-decoration: none;
+    text-align: center;
+    padding:0 1.5%;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    line-height:50px;
+    font-weight:400;
+}
+div nav .menuLinks a:hover{
+    /* min-height: 50px; */
+    background-color:rgb(246, 178, 14);
+}
+.buttonMenu
+{
+ display: none;   
+}
+.plus {
+
+    cursor: pointer;
+    border: none;
+}
+
+.subMenu {
+    position: relative;
+    display: inline-block;
+}
+
+.subMenuContent {
+    display: none;
+    position: absolute;
+    background-color:#333333;
+    min-width: 160px;
+    overflow: auto;
+    z-index: 1;
+}
+
+.subMenuContent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.subMenu a:hover {background-color: #333333;}
+
+.show {display: block;}
+
+ header{
+     padding-top:6%;
+     display:flex;
+     position: relative;
+     margin: 0 auto;
+    width: 100%;
+    background-color: rgba(13, 2, 26, 0.884);
+    z-index: 100;
+
+
+}
+.headerContent{
+    display:inline-block;
+    margin: 0 auto;
+    align-content: center;
+}
+
+.leftHeader{
+    display:block;
+    width: 50%;
+    float:left;
+    color: #ffffff;   
+    margin-left: 1%;
+    padding-top:1.5%;
+}
+.leftHeader h1{
+    font-size: 54px;
+    color: #fff;
+    line-height:76px;
+    padding-bottom:15%;    
+    font-family: 'Roboto Slab', serif;
+  
+
+
+    
+}
+.leftHeader h5{
+    font-size:1.5em;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    padding-bottom:8%; 
+    
+}
+.leftHeader .allStore{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+.leftHeader .store1{
+    width: 42%;
+    box-sizing: border-box;
+    background-color:#F6B20E;
+    border-radius: 10px;
+    border: 10px #F6B20E solid;
+    margin-left:2% 1%;
+    box-sizing: border-box;
+    padding:2% 1%;
+
+    
+}
+.leftHeader .store2 {
+    background-color:#BA0A14;
+    width: 42%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-left:2%;
+    border: 10px #BA0A14 solid;
+    box-sizing: border-box;
+    padding: 2%;
+}
+.leftHeader button  {
+    display: block;
+    margin: 5px;
+    font-size:1.7em;
+    font-family:"Roboto Slab", serif;
+    font-weight:bolder;
+    text-decoration-style: none; 
+    color: #fff;
+    z-index: 1000;
+    
+}
+
+.rightHeader{
+    float:left;  
+    width: 45%;
+    margin: auto;
+} 
+.rightHeader img{
+    width: 95%;
+    margin-left:6%;
+    margin-top:3%;
+}
+
+
+/* <!--start  section2 AWESOME FEATURES" --> */
+/* section header */
+.features, .services, .howItWork, .ourPortifilio, .PricingTable, .teamMembers, .TESTIMONIAL, .blog, .ContactUs, .download, .pricing {
+    clear: both;
+    background-color: #FFFFFF;
+    text-align: center;
+    display: flex;
+    position: relative;
+    padding-bottom: 15vh;
+ 
+}
+.features h2,.howItWork h2, .ourPortifilio h2, .PricingTable h2, .teamMembers h2, .TESTIMONIAL h2, .blog h2, .ContactUs h2, .pricing h2{
+    margin: 10% auto 5% auto;
+    clear: both;
+    text-align: center;
+    color:#333333;
+    font-size: 2.8em;
+    display: inline-block;
+
+
+
+}
+#blot{
+    display: block;
+    font-size: .6em;
+position: relative;
+color:#7F7F7F;
+}
+#blot::after {
+        border-bottom:1px #7F7F7F solid;
+        content: "";
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 50%;
+      }
+
+
+      /* .features paragraph */
+ 
+    .features p,.services p .howItWork p, .ourPortifilio p, .PricingTable p, .teamMembers p, .TESTIMONIAL p, .blog p, .ContactUs p, .pricing p{
+        clear: both;
+        text-align: center;
+        color:#5B5A5A;
+        font-size:2em;
+        display: inline-block;
+        font-weight: 0;
+    
+    }
+
+    /* .features content */
+    .featureContent, .servicesContent ,.howItWorkContent, .contactUsContent, .downloadContent{
+        margin: 5% auto auto auto;
+        display:flex;
+        justify-content: center;
+    
+    }
+    .leftContentFeatures{
+        width: 49%;
+        display: inline-block;
+        margin: 10% auto auto auto;
+
+    }
+    .leftContentFeatures .top{
+
+        padding: 0;
+        width: 100%;  
+        display: flex; 
+        /* justify-content: center; */
+        height: auto;
+
+
+    }
+    .leftContentFeatures  h5{
+        text-align: initial;
+        font-size: 1.6em;
+        font-weight:700;
+        padding-bottom:7%;
+        color:rgb(85, 83, 83);
+        font-family:"Roboto Slab", serif;
+    
+    }
+    .leftContentFeatures  p{
+        font-size: .85em;
+        text-align: initial;
+        padding-bottom:6%;
+        font-family:"Open Sans", sans-serif;
+        font-weight: 300px;
+        color: #555454;
+    
+    }
+    .leftContentFeatures  i{
+        color:#F6B20E; 
+        display:flex;
+        font-size: 1.6em;
+        padding-bottom:7%;
+    }
+    .leftContentFeatures .topLeft{
+       
+    margin-right:5 %;
+     padding: 5px 15px 5px 0px;
+    border-bottom-style: inset;
+    border-right-style: inset;
+    color: rgba(0, 0, 0, 0.884);
+    border-width: 1px;
+        float: left;
+        width: 49%;
+        direction: rtl;
+    
+    }
+    
+    .leftContentFeatures .topRight{
+     margin-left: 3%;
+     padding: 5px 0px 5px 5px;
+    border-bottom-style: inset;
+    color: rgba(0, 0, 0, 0.884);
+    display:inline-block;
+    border-width: 1px;
+    width: 49%;
+    text-align: left;
+    direction: ltr;
+    
+    }
+.bottom{
+    margin-top: 10px;
+    padding: 10px 0;
+        width: 100%;  
+        display: flex; 
+        justify-content: center;
+        height: auto;
+
+}
+.leftContentFeatures .bottomLeft{
+    margin-right: 10px;
+    padding: 5px 15px 5px 0px;
+   border-right-style: inset;
+   color: rgba(0, 0, 0, 0.884);
+   border-width: 1px;
+       float: left;
+       width: 49%;
+       direction: rtl;
+       display: block;
+}
+.leftContentFeatures .botttomRight{
+    margin-right: 1%;
+    padding: 5px 0px 5px 5px;
+   color: rgba(0, 0, 0, 0.884);
+   display:inline-block;
+   border-width: 1px;
+   width: 49%;
+   text-align: left;
+   direction: ltr;
+  }
+
+    .rightContentFeatures{
+        width: 45%;
+        float: left;
+        display: block;
+
+    }
+    
+    .rightContentFeatures img{
+        width: 90%;
+    }
+
+    /* <!-- section3 ""OUR SERVICES""" -->   */
+    .services {
+        margin: 0 auto;
+        width: 100%;
+        background-image: url("../images/services_bg.png");
+        background-color:rgba(1, 10, 28, 0.8);
+        height:auto;
+        padding: 0;
+        font-family:'roboto slab';
+    }
+    .background{
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+        background-color:rgba(1, 10, 28, 0.8);
+        padding-top: .1%;
+        z-index: 0;
+
+
+    }
+.services h2, .TESTIMONIAL h2{
+font-family:"Roboto Slab", serif;
+font-size:2.9em;
+vertical-align:baseline;
+font-weight:300;
+text-decoration:none solid rgb(255, 255, 255);
+text-align: center;   
+color: white;
+margin: 0;
+padding: 0;
+margin-bottom: 5%;
+margin-top: 10%;
+clear: both;
+display: inline-block;
+z-index: 10;
+
+    }
+#blot2{
+    display: block;
+    font-size:.6em;
+position: relative;
+color: #7F7F7F;
+}
+ #blot2::after {
+    color: #7F7F7F;
+    border-color: #7F7F7F;
+        border-bottom:1px #7F7F7F solid;
+        content: "";
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        }
+.services p, .TESTIMONIAL p{
+color: white;
+font-family:"Roboto Slab", serif;
+font-size:2em;
+vertical-align:baseline;
+font-weight:300;
+line-height: 45px;
+text-decoration:none solid rgb(255, 255, 255);
+text-align: center;   
+margin-bottom: 3%;
+    }
+
+.servicesContent{
+    margin: 0;
+    padding: 0; 
+    padding-top:5%;
+    position: relative;
+}
+    .leftContentServices{
+        margin: 40% auto 0 auto;
+        width:60%;
+        float: left;
+        margin-right: 5%;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        bottom: 0;
+        left: 0;
+        box-sizing: border-box;
+   
+    }
+    .leftContentServices .image1{
+        float:left;
+        display: flex;
+        flex-direction: row;
+        bottom: 0;
+        margin: 0 auto;
+        position:absolute;
+        width: 45%;
+        box-sizing: border-box;: 
+    
+
+    }
+    .leftContentServices .image1 img, .leftContentServices .image1 img{
+       width: 95%;   
+
+    }
+    .leftContentServices .image2{
+    
+        width: 45%;
+        box-sizing: border-box;
+        position: absolute;
+        left:46% ;
+        bottom: 0;
+        padding-top:0;
+        margin:0 auto;
+
+    }
+   .rightContentServices{
+       width: 40%;
+       display: block;
+       padding: 0;
+       margin: 0;
+       position: relative;
+       bottom: 10%;
+   }
+   .first, .second, .third{
+       width: 98%;
+       box-sizing: border-box;
+   }
+   .servicesContent .fa-rocket, .servicesContent .fa-desktop, .servicesContent .fa-html5{
+       float:left;
+       padding: 4%;
+       box-sizing: border-box;
+       border-radius: 50%;
+       border: 2px #F6B20E solid;
+       color:#F6B20E; 
+       font-size: 1.5em;
+       text-align: center;
+       margin-right:8%;
+
+   }
+
+.servicesContent .fa-rocket:hover, .servicesContent .fa-desktop:hover, .servicesContent .fa-html5:hover{
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+    transition-delay: 0.3s;
+   }
+   .rightContentServices a{
+display:block;
+color: white; 
+text-decoration: none;
+font-family:"Roboto Slab", serif;
+font-size:2.1em;
+font-weight:500;
+text-decoration:none solid rgb(255, 255, 255);
+text-align:left;
+margin: .5% auto;
+}
+.rightContentServices p{
+ display:flex;
+ font-family:"Open Sans", sans-serif;
+font-size:.9em;
+font-weight:300;
+text-decoration:none solid rgb(255, 255, 255);
+text-align:left;
+box-sizing: border-box;
+line-height: 25px;
+}
+
+
+/* section 4 how it work */
+.howItWork h2{
+display: table;
+}
+.howItWork h4{
+    font-size: 2em;
+    color: #555454;
+
+    width: 100%;
+}
+.leftContent{
+    padding: 3% 4% 0 0;
+    text-align: right;
+    direction: rtl;
+}
+.rightContent {
+    padding: 4% 0 0 5% ;
+    text-align: left;
+
+}
+
+.howItWork  #fa{
+    color: #F6B20E;
+    font-size: 2.5em;
+    padding:8% 0 6% 0;
+    padding-top: 3%;
+}
+.howItWork  a {
+    color:#555353;
+    font-size: 1.5em;
+    padding-bottom: 2%;
+    text-decoration: none;
+    font-weight: 700;
+    display: block;
+}
+.howItWork  p {
+    columns: #555455d8;;
+    font-size:.9em;
+    line-height: 1.2em;
+    margin-top: 3%;
+    line-height: 25px;
+    text-align: right;
+
+
+}
+.howItWork .rightContent #blot {
+ color: #F6B20E;
+ font-size: .5em;
+ margin-left: -20%;
+}
+.howItWork .rightContent #blot:after, .howItWork .leftContent #blot:after {
+    color: #F6B20E;
+    border-bottom: 1px #F6B20E solid;
+    width: 50%;
+   
+   }
+.howItWork #node{
+    float: left;
+    font-size: .5em;
+    margin-left: -22%;
+    color: #F6B20E;
+}
+  
+
+.howItWork .leftContent #blot {
+    color: #F6B20E;
+    border-color: #F6B20E;
+    font-size: .5em;
+    margin-right: -22%;
+   }
+
+.rightContent  p {
+    text-align: left;
+}
+
+/* section 4 ourPortifilio */
+
+.ourPortifilio{
+background-color: #F0EFEF;
+width: 100%;
+clear: both;
+}
+
+.ourPortifilio  .button{
+    display: flex;
+    clear: both;
+    margin: 5% auto auto auto;
+    width: 80%;
+}
+
+.ourPortifilio  .button > div {
+
+    background-color: #FFFFFF;
+    min-width: 17%;
+    margin: 0 auto;
+    text-align: center;
+    color: rgba(0, 0, 0);
+    line-height: 2.3em;
+    font-size:.9em;
+}
+.ourPortifilio  .button a{
+    text-decoration:none;
+    color: #000000; 
+    font-family: 'Open Sans';
+}
+.gallery{
+    display: flex;
+    margin: 5% auto;
+}
+.gallery img{
+    width: 90%;
+}
+
+/* <!-- section 6 pricing table --> */
+ 
+.pricing{
+    background-image:url(../images/price_table_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    color: #ffffff;  
+    margin: 0 auto;
+    width: 100%;
+    background-color:rgba(1, 10, 28, 0.8);
+    height:auto;
+    padding: 0;
+    font-family:'roboto slab';
+}
+.pricing h2{
+    color: white;
+}
+.pricing p{
+    color: white
+}
+.pricingList{
+    margin: 0 auto;
+    display: flex;
+    flex-direction:row;
+    width: 100%;
+    border-radius: 10px;
+}
+.priceBasic, .pricePro ,.priceAdvanced{
+    width: 30%;
+    margin: 0;padding: 0;
+    margin: 4% auto;
+    background-color: white;
+    border-radius: 5px;
+    font-family: 'Roboto Slab',Serfi;
+    color: #555454;
+}
+.priceField{
+    position: relative;
+    overflow: hidden;
+}
+.priceField h2{
+    color: #555454;
+    font-weight: lighter;
+    font-size: 3.5em;
+    margin: 4% auto;
+    text-align: center;
+
+}
+.priceOffer{
+    background-color:#BA0A14;
+    transform: rotate(-45deg);
+    position: absolute;
+    padding: 2%;
+    width: 35%;
+    color: white;
+    top: 16%;
+    left:-9%;
+    overflow: hidden;
+}
+.pricing .pricePayment{
+    background-color:#E4E2E2;
+    width: 100%;
+    padding:4%;
+}
+.pricePayment .priceContent{
+    width:30%;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    padding: 10% 4%;
+
+}
+.pricePayment .priceContent p{
+    text-align: center;
+color: #333333;
+font-size: 3em;
+font-weight:700;
+line-height: 40%;
+text-align: center;
+margin: 0 auto;
+}
+.priceListInformation{
+    font-size: 1em;
+    color:#555454;
+    background-color: white;
+    margin: 5% auto 10% auto;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.priceListInformation p{
+    padding: 3% 0;
+    width: 100%;
+    border-bottom: 1px rgba(165, 164, 164, 0.363) dashed;
+    color:#555454;
+    font-size:1.3em;
+    font-weight: 300px;
+}
+
+.pricing button{
+    margin-bottom: 10%;
+    background-color: #F6B20E;
+    padding: 3.5%;
+    color: white;
+    border: none;
+    width: 60%;
+    font-size:1.7em;
+    border-radius: 10px;
+}
+.pricing button:hover{
+ background-color: #BA0A14;
+}
+
+
+/* 
+<!-- section 6 our portifiio --> */ */
+.teamMembers{
+    display: flex;
+    background: white;
+}
+
+.team{
+    display: flex;
+    margin: 3vh auto;
+    background-color: #FFFFFF;
+    text-align: center;
+
+}
+.team >div{
+    max-width:24%;
+    width: 23%;
+    margin: 5vh auto;
+  
+}
+.team figure{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+
+}
+.team figure img{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+
+}
+.team figcaption{
+    border: 1px rgba(214, 214, 214, 0.548) solid;
+    border-top: none;
+
+}
+.team  h3{
+    padding-top: 2vh ;
+    font-family:'roboto slab';
+    font-size: 1.7em;
+    color: #333333;
+    text-align: center;
+}
+.team  p{
+    margin: 1vh auto 4vh auto;
+    text-align: center;
+    font-family:'Open Sans';
+    font-size: 1em;
+    color:#F6B20E;
+}
+
+
+/* <!-- section 8 our portifiio --> */
+
+.TESTIMONIAL{
+    background-image: url(../images/testi_bg.png);
+    width: 100%;
+    color: white;
+    font-family:'roboto slab';
+    margin: 0 auto;
+    width: 100%;
+    background-color:rgba(1, 10, 28, 0.8);
+    padding: 0;
+}
+.abstract{
+    margin: 0 auto 15vh auto;
+    padding: 0;
+    padding: 10px;
+    font-family:'Open Sans';
+    border: 1px rgba(102, 102, 102, 0.25) solid;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 60%;
+}
+
+.abstract .figure{
+    width:30%;
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+.abstract figcaption{
+    padding: 0;
+    margin: 0;
+}
+.abstract figcaption h3{
+    font-size: 1.1em;
+    font-family: 'Roboto Slab';
+    color: white;
+    text-align: center;
+}
+.abstract figcaption p{
+    font-size: .7em;
+    font-family: 'Roboto Slab';
+    color: #F6B20E;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 2vh;
+
+}
+.abstract .about{
+    float: left;
+    margin: 0 auto;
+    text-align: left;
+    width: 70%;
+
+}
+.abstract .about  p{
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    padding-top: 25px ;
+    font-size: 1em;
+    line-height:1.5em;
+    font-family: 'Open Sans';
+    color: white;
+    
+}
+
+
+/* section9 our latest blog */
+
+.blog{
+    display: flex;
+    margin: 0 auto;
+    clear:both;
+
+}
+.blog .latestBlog{
+    display: flex;
+    margin: 3% auto;
+    width: 100%;
+}
+.latesBlog1, .latesBlog2, .latesBlog3{
+    width:30%;
+    margin: 0 auto;
+   
+}
+.blogImage{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.latesBlog1 img, .latesBlog2 img, .latesBlog3 img {
+    width: 100%;
+    margin: 0 auto;
+}
+ 
+.caption{
+    background-color: white;
+    width: 90%;
+    padding: 4% 2% 0 5%;
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    right: 5%;
+    
+}
+.caption a{
+    text-decoration: none;}
+.caption h6{
+    text-decoration: none;
+    color: #F6B20E;
+    font-family: 'Roboto Slab';
+    font-size: .9em;
+    text-align: left;
+    padding: 3% 0;
+}
+.caption p{
+    color: #333333;
+    font-family: 'Roboto Slab Light';
+    font-size: 1.3em;
+    text-align: left;
+}
+.comments{
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+.comments p, .comments a{
+    color: #55545473;
+    font-size: .9em;
+    padding: 6% 2% 0 0;
+    text-align: left;
+    text-decoration: none;
+
+}
+.readMore{
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    left: 10%;
+    font-size: 1em;
+    color:#333333;
+    font-family: 'Open Sans';
+    margin-top: 2%;
+}
+.readMore a{
+    border-bottom: 1px #333333 solid;
+    text-decoration: none;
+    padding-bottom:5px;
+    color: #000000;
+}
+
+
+/* section10 our  */
+
+.ContactUs{
+    margin: 0 auto;
+    width: 100%;
+    background-image: url("../images/contact_bg.png");
+    background-size: cover;
+    background-color:rgba(1, 10, 28, 0.8);
+    height:auto;
+    padding: 0;
+    font-family:'roboto slab';
+}
+.ContactUs h2{
+    color: white;
+}
+.ContactUs p{
+    color: white
+}
+.contactUsContent{
+    display: flex;
+    margin: 5% auto;
+    padding: auto;
+    width: 100%;
+}
+
+.leftContentContacts{
+    background-color: white;
+    width:47%;
+    margin: 0 auto;
+    padding: 2% ;
+    padding:2% 3% 3% 4%;
+}
+
+
+.leftContentContacts label{
+    font-family: "Roboto Slab";
+    font-size: .9em;
+    color: #333333;
+    display: flex;
+    font-weight: 700;
+    margin: 6% 0 3% 0;
+}
+.leftContentContacts input{
+    font-family: "Open Sans";
+    font-size:1.2em;
+    border: 1px #5554542f solid;
+    border-radius: 12px;
+    height: 55px;
+    color: #555454;
+    display: flex;
+    width:97%;
+    margin: 1% auto 2% 0;
+    box-shadow: none;
+}
+
+.leftContentContacts textarea {
+    font-family: "Open Sans";
+    font-size:1em;
+    border: 1px #5554542f solid;
+    border-radius: 12px;
+    height: 100px;
+    color: #555454;
+    display: flex;
+    width:97%;
+    margin: 1% auto 2% 0;
+    
+}
+.leftContentContacts  #submeit{
+    width: 46%;
+    background-color: #F6B20E;
+    margin-top: 6%;
+    float: left;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    font-family:'Roboto Slab';
+    font-size: 1.6em;
+    box-shadow: none;
+    border: none;
+    
+
+}
+ .leftContentContacts p{
+   margin: 5% auto;
+   text-align: center;
+   font-size: 1em;
+
+}
+/* right content of contact us */
+.rightContentContacts{
+    color: white;
+    width: 37%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    margin: 3% auto;
+}
+.contactUsContent .fa-home, .contactUsContent .fa-envelope, .contactUsContent .fa-phone, .contactUsContent .fa-fax{
+    float:left;
+    box-sizing: border-box;
+    color:#F6B20E; 
+    font-size: 3em;
+    text-align: center;
+    margin-right:8%;
+
+}
+.first, .second, .third{
+    margin: 5% auto;
+}
+.rightContentContacts a{
+display:block;
+color: white; 
+text-decoration: none;
+font-family:"Roboto Slab", serif;
+font-size:1.3em;
+font-weight:500;
+text-decoration:none solid rgb(255, 255, 255);
+text-align:left;
+margin: 10px auto;
+}
+.rightContentContacts h5{
+display: block;
+font-family:"Open Sans", sans-serif;
+font-size:1.3em;
+font-weight:400;
+text-decoration:none solid rgb(255, 255, 255);
+text-align:left;
+}
+
+
+
+
+ /* section11 download cooming soon secttion */
+
+.download{
+    display: flex;
+    width: 100%;
+    font-family:'Roboto Slab';
+    font-size: 1.4em;
+    color: #333333b6;
+    font-weight: none;
+}
+.appContent{
+    margin: 0;padding: 0;
+    margin-top: 10%;
+    width: 100%;
+    display: flex;
+}
+.download .newsletter{
+    margin: 0;padding: 0;
+    width:35%;
+    margin: 0 auto;
+    padding: 2% 4%;
+    text-align: left;
+    
+}
+.download .newsletter h2,.downloadApp h2{
+    color: #333333;
+    padding: 0;
+    margin: 0;
+    margin: 8% 0 ;
+    text-align: left;
+    font-family:'Roboto Slab';
+    font-size: 1.4em;
+}
+.download .newsletter input{
+    color: #333333;
+    margin: 8% auto ;
+    width:98%;
+    text-align: left;
+    font-family:'Roboto Slab';
+    font-size: 1.4em;
+    border: 1px #e6e3e3 solid;
+    border-radius: 10px;
+}
+.newsletter  button{
+ width: 50%;
+ font-size: 1.2em;
+ color: white;
+ padding: 4% 2.5%;
+ border: none;
+ border-radius: 10px;
+ background-color: #F6B20E;
+ display: block;
+    
+
+}
+
+.download .centerContent{
+    width:27%;
+    margin: 0 auto;
+    padding: 0;
+
+}
+.download .centerContent img{
+    width:100%;
+}
+.download .downloadApp{
+    margin: 0;padding: 0;
+    width:35%;
+    margin: 0 auto;
+    padding: 2% 4%;
+    text-align:left;
+
+}
+.download .downloadApp button {
+    width: 75%;
+    padding: 3% 2%;
+    font-size: 1.4em;
+    color: white;
+     border: none;
+    border-radius: 10px;
+     background-color: #F6B20E;
+     display: block;
+     margin-top: 22%;
+     margin-bottom: 12%;
+       }
+.download .downloadApp .button a {
+    width: 90%;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 400px;
+background-color: #BA0A14;
+}
+
+.download .downloadApp .button1{
+    margin-top: 22%;
+    margin-bottom: 12%;
+background-color: #BA0A14;
+}
+
+
+/* section12 social media */
+
+.social{
+clear: both;
+width: 100%;
+background-color: #000000;
+text-align: center;
+margin: 0 auto;
+position: relative;
+}
+
+.social .socialContent{
+    width: 100%;
+    color: white;
+    display: inline-block;
+    margin: 0;
+    margin: 5.5% auto 3.5% auto;
+    padding: 0;
+    font-size: 1.1em;
+    font-family: 'Open Sans';
+}
+.social .socialContent h2{
+    font-size: 1.95em;
+    font-weight: lighter;
+    font-family:'Roboto Slab-Light';
+}
+.social .socialLinks{
+    display:  flex;
+    width: 45%;
+    margin:6% auto 9.5% auto;
+    text-align: center;
+}
+.social .socialLinks a{
+    color: white;
+    text-decoration: none;
+    margin: 0 auto;
+    font-size: 1.3em;
+}
+.social .topPage{
+    color: #F6B20E;
+    border-color: #F6B20E;
+    font-size: 3em;
+    position: absolute;
+    bottom: 3%;
+    text-align: right;
+    left: 95%;
+}
+@media only screen and (max-width: 1500px){
+.container{
+    width:80%;
+    max-width: 1500;
+    font-size: 1em;
+}
+
+/* pricing section 5 */
+.pricing h2{
+    font-size: 2.2em;
+}
+.pricing p{
+    font-size:1.7em;
+}
+.priceListInformation p{
+    font-size: .8em;
+}
+.pricePayment .priceContent p{
+    font-size:2.5em;
+}
+
+}
+
+
+/* ----------------------- */
+@media only screen and (max-width: 1380px){
+.container{
+    width: 90%;
+    max-width: 1380px;
+}
+.pricing h2{
+    font-size: 2.2em;
+}
+.pricing p{
+    font-size:1.7em;
+}
+.priceListInformation p{
+    font-size: .8em;
+}
+.pricePayment .priceContent p{
+    font-size: 1.3em;
+}
+}
+
+@media only screen and  (max-width: 1250px){
+    .container{
+        width:95%;
+        max-width: 1250px;
+    }
+
+
+    @media only screen and (max-width:1170px){
+        .container {
+            width: 85%;
+        max-width: 1160px;     
+ }
+ nav .menuLinks {
+     font-size:.8em;
+ }
+ .logo{
+     margin-right: 0;
+     margin-right: 8%;
+ }
+ 
+ .leftHeader h1{
+     font-size: 2.8em;
+     line height:50px;
+     margin-bottom: 0;
+     margin-bottom:4%;
+ }
+ .leftHeader h5{
+     font-size:1.2em;
+    margin-bottom:2%;
+}
+
+ .leftHeader .allStore{
+     display: flex;
+     flex-direction: column;
+ }
+ .leftHeader .store1,  .leftHeader .store2{
+     width:47%;
+     margin-bottom: 5%;
+ }
+
+ .rightHeader img{
+     width:100%;
+     margin-top: 15%;
+ }
+
+ /* section 2 */
+ .leftContentFeatures  h5{
+     font-size: 1.2em;
+ }
+ .leftContentFeatures  p{
+font-size:.8em;
+line-height: 24px; 
+}
+
+    }

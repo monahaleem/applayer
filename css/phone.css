@@ -1,0 +1,376 @@
+@media only screen and (max-width:800px){
+    section{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .container{
+        width:98%;
+        max-width:993px;
+        margin: 0 auto;
+        position: relative;
+        padding: 0;
+        }
+    nav {
+        margin:0 auto;
+        padding:0 ;
+        display: flex;
+        width: 100%;
+    } 
+    .logo{
+        max-width: 15%;
+        float: left;
+        display:inline-flex;
+        margin: auto 14% auto 0;
+        padding: 0;
+    
+     
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+    }
+    .buttonMenu{
+        display: flex;
+        margin: 0 auto;
+        padding: 0;
+        font-size: 2em;
+        color: white;
+        background-color: aquamarine;
+
+    }
+ 
+nav  .menuLinks, nav .subMenu{
+    overflow: hidden;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  float: none;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 1.2em;
+  font-family: 'Open Sans', sans-serif;
+}
+.buttonMenu{
+    display: flex;
+    color: white;
+    background-color: wheat;
+    font-size: 2em;
+}
+.plus{
+    display: none;
+    overflow: hidden;
+}
+nav .menuLinks a, nav subMenu a{
+    display: block;
+    justify-content: center;
+    float: none;
+    width: 100%;
+    text-align: center;
+    background-color:black;
+    margin: 0 auto;
+}
+nav .menuLinks a:hover{
+    background-color:rgb(246, 178, 14);
+}
+
+/* section3 services */
+
+.rightContentServices{
+    width: 70%;
+    display: flex;
+    text-align: center;
+    float: none;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.first, .second, .third{
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    text-align: center;
+    float: none;
+}
+.services,.servicesContent {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    margin: 0 auto;
+    float: none;
+    position: static;
+    }
+    
+    .leftContentServices{
+        width:80%;
+        margin: 0;
+        padding: 0;
+        display:flex;
+        position: initial;
+    }
+    .rightContentServices{
+        width: 70%;
+        display: flex;
+        text-align: center;
+        float: none;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .servicesContent .fa-rocket, .servicesContent .fa-desktop, .servicesContent .fa-html5{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .image1 img{
+        display: none;
+        overflow: hidden;
+        position: unset;
+    }
+    .image2 {
+        display:contents ;
+        margin: 0;
+        margin: 0 auto;
+        justify-content: center;
+        text-align: center;
+        position: absolute;
+    }
+    /* our portifilio section4 */
+    .ourPortifilio  .button{
+    padding: 9% auto;
+    margin: 4%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .ourPortifilio  .button {
+        margin:  4% auto;
+      
+    }
+
+    /* section 7 teamwork */
+
+    .team{
+        display: flex;
+        flex-direction: column;
+        float: none;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .time figure{
+        display: flex;
+        flex-direction: column;
+        float: none;
+        justify-content: center;
+        margin: 0 auto;
+        width:40%;
+
+    }
+    .team h3{
+        font-size: 1em;
+    }
+    .team p{
+        font-size: .7em;
+    }
+    .teamMembers h2{
+        font-size: 2.5em;
+    }
+    .teamMembers p{
+        font-size: 1.5em;
+        padding-bottom: 5%;
+    }
+
+    /* TESTIMONIAL section */
+    .TESTIMONIAL h2{
+        font-size: 2em;
+        float: none;
+    }
+    .TESTIMONIAL p{
+      font-size:   1em;
+    }
+    .abstract figure{
+        width:100%;
+        padding: 0;
+        margin: 0;
+        float: left;
+        flex-direction: row;
+        text-align: center;
+    }
+    .abstract figcaption{
+        width: 98%;
+        padding: 0;
+        margin: 0;
+    }
+    .abstract figcaption p{
+        font-size: .8em;
+    }
+    .abstract figcaption h3{
+        font-size: .4em;
+        text-align: center;
+    }
+    .abstract figcaption h3{
+        font-size: .9em;
+        width: 100%;
+    }
+    .abstract {width:100%; padding: 0 ;
+        margin: 0;
+    padding-left: 10%;}
+    .abstract figure{
+        width:20%;
+    }
+    .abstract figure{
+   padding: 0;
+   margin: 0;}
+
+
+    /* section blog */
+
+  
+.latestBlog{
+    display:table-column;
+    margin: 0 auto;
+}
+
+.blog .latestBlog{
+    display: flex;
+    margin:15% auto;
+    width: 100%;
+    flex-direction: column;
+    padding: 10% auto;
+}
+.latesBlog1, .latesBlog2, .latesBlog3{
+    width:90%;
+    margin-top: 5%;
+    padding-top: 10%;
+    margin: 0 auto;
+   
+}
+
+
+.blog{
+    display: flex;
+    margin: 0 auto;
+    clear:both;
+
+}
+.blog .latestBlog{
+    display: flex;
+    margin: .3% auto;
+    width: 100%;
+}
+.latesBlog1, .latesBlog2, .latesBlog3{
+    width:90%;
+    margin: 0 auto;
+   
+}
+.blogImage{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.latesBlog1 img, .latesBlog2 img, .latesBlog3 img {
+    width: 100%;
+    margin: 0 auto;
+}
+ 
+.caption{
+    background-color: white;
+    width: 90%;
+    padding: 3% 2% 0 5%;
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    right: 5%;
+    
+}
+.caption a{
+    text-decoration: none;}
+.caption h6{
+    margin-bottom: 3%;
+    text-decoration: none;
+    color: #F6B20E;
+    font-family: 'Roboto Slab';
+    font-size: .9em;
+    text-align: left;
+    padding: .3% 0;
+}
+.caption p{
+    margin-top: 5%;
+    color: #333333;
+    font-family: 'Roboto Slab Light';
+    font-size: 1.1em;
+    text-align: left;
+    
+}
+.comments{
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+.comments p, .comments a{
+    color: #55545473;
+    font-size: .9em;
+    padding: .6% .2% 0 0;
+    text-align: left;
+    text-decoration: none;
+
+}
+.readMore{
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    left: 10%;
+    font-size:.7em;
+    font-weight: 600;
+    color:#333333;
+    font-family: 'Open Sans';
+    margin-top: 1%;
+}
+.readMore a{
+    border-bottom: 1px #333333 solid;
+    text-decoration: none;
+    padding-bottom:5px;
+    color: #000000;
+}
+
+/* contact us section */
+
+.contactUsContent{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    float: none;
+    width: 100%;
+}
+.leftContentContacts{
+
+    display:flex;
+    margin: 5% auto;
+    width: 90%; 
+  
+}
+
+.leftContentContacts  #submeit{
+width: 70%;
+}
+.rightContentContacts a{
+   
+    display: flex;
+   width: 80%;
+    font-size: 1em;
+    text-align: center;
+}
+.first, .second, .third{
+    display: flex;
+    flex-direction: row;
+}
+.contactUsContent .fa-home, .contactUsContent .fa-envelope, .contactUsContent .fa-phone, .contactUsContent .fa-fax{
+display: flex;
+}
+}
