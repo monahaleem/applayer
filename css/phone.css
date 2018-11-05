@@ -1,15 +1,13 @@
-@media only screen and (max-width:800px){
-    section{
-        width: 100%;
-        margin: 0 auto;
-        padding: 0;
-    }
+@media only screen and (max-width:767px){
+   .buttonClick{
+       display: block;
+   }
     .container{
-        width:98%;
-        max-width:993px;
-        margin: 0 auto;
-        position: relative;
-        padding: 0;
+        width:95%;
+        max-width:767px;
+        }
+        .features h2,.howItWork h2, .ourPortifilio h2, .PricingTable h2, .teamMembers h2, .TESTIMONIAL h2, .blog h2, .ContactUs h2, .pricing h2{
+        font-size: 1.6em;
         }
     nav {
         margin:0 auto;
@@ -17,91 +15,82 @@
         display: flex;
         width: 100%;
     } 
-    .logo{
+.logo{
         max-width: 15%;
         float: left;
-        display:inline-flex;
-        margin: auto 14% auto 0;
-        padding: 0;
-    
-     
+       display: flex;
+        margin: 0 ;
+        padding: 0;     
     }
-    nav{
-        display: flex;
+nav{
+        display: block;
         flex-direction: row;
     }
-    .buttonMenu{
-        display: flex;
-        margin: 0 auto;
-        padding: 0;
-        font-size: 2em;
-        color: white;
-        background-color: aquamarine;
-
-    }
- 
-nav  .menuLinks, nav .subMenu{
-    overflow: hidden;
+#menuLinks{
     display: none;
-    flex-direction: column;
-    width: 100%;
-  float: none;
-  text-align: center;
-  justify-content: center;
-  margin: 0 auto;
-  font-size: 1.2em;
-  font-family: 'Open Sans', sans-serif;
+    font-size:1em;
+  
 }
-.buttonMenu{
-    display: flex;
+
+.icon{
+    display: block;
+    margin-left: 95%;
     color: white;
-    background-color: wheat;
-    font-size: 2em;
+    border-radius: 5px;
+    border: 1px whitesmoke solid;
+    text-align: center;
+    padding: 0;
+    font-size:1.5em;
 }
 .plus{
     display: none;
     overflow: hidden;
 }
-nav .menuLinks a, nav subMenu a{
+.subMenu{
+    display: block;
+    margin: 0 auto;
+    float: none;
+}
+.subMenu #subMenu {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 ;
+    float: none;
+}
+.menuLinks a{
     display: block;
     justify-content: center;
     float: none;
     width: 100%;
     text-align: center;
-    background-color:black;
-    margin: 0 auto;
+    background-color:black; 
 }
 nav .menuLinks a:hover{
     background-color:rgb(246, 178, 14);
 }
 
+
 /* section3 services */
 
 .rightContentServices{
-    width: 70%;
-    display: flex;
-    text-align: center;
-    float: none;
-    justify-content: center;
-    flex-direction: column;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
-.first, .second, .third{
-    width: 98%;
-    display: flex;
+.rightContentServices .first,.rightContentServices .second,.rightContentServices .third,.rightContentServices p,.rightContentServices a{
+    display:  flex;
     flex-direction: column;
-    box-sizing: border-box;
+    float: none;
     text-align: center;
-    float: none;
+    clear: both;
+    font-size: 1.4em;
+    line-height: 30px;
 }
-.services,.servicesContent {
-    display: flex;
-    flex-direction: column-reverse;
-    width: 100%;
-    margin: 0 auto;
-    float: none;
-    position: static;
-    }
+.rightContentServices  h5{
+    margin: 4% auto;
+    font-size: 1em;
+}
+
     
     .leftContentServices{
         width:80%;
@@ -109,21 +98,6 @@ nav .menuLinks a:hover{
         padding: 0;
         display:flex;
         position: initial;
-    }
-    .rightContentServices{
-        width: 70%;
-        display: flex;
-        text-align: center;
-        float: none;
-        justify-content: center;
-        flex-direction: column;
-        margin: 0 auto;
-    }
-    .servicesContent .fa-rocket, .servicesContent .fa-desktop, .servicesContent .fa-html5{
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        margin: 0 auto;
     }
     .image1 img{
         display: none;
@@ -140,16 +114,18 @@ nav .menuLinks a:hover{
     }
     /* our portifilio section4 */
     .ourPortifilio  .button{
-    padding: 9% auto;
     margin: 4%;
-        display: flex;
+ display: flex;
         flex-direction: column;
-        margin: 0 auto;
+        margin: 4% auto;
         text-align: center;
     }
-    .ourPortifilio  .button {
-        margin:  4% auto;
+    .ourPortifilio  .button  div{
+        margin:  1% auto;
       
+    }
+    .download .newsletter p{
+        line-height: 20px;
     }
 
     /* section 7 teamwork */
@@ -160,6 +136,10 @@ nav .menuLinks a:hover{
         float: none;
         justify-content: center;
         margin: 0 auto;
+    }
+    .team .figure1,.team .figure2{
+        display: flex;
+        flex-direction: column;
     }
     .time figure{
         display: flex;
@@ -192,144 +172,48 @@ nav .menuLinks a:hover{
     .TESTIMONIAL p{
       font-size:   1em;
     }
-    .abstract figure{
+    .TESTIMONIAL .abstract{
+        width: 85%;
+        margin: 3% auto;
+        padding: 3% auto;
+    }
+    .abstract .figure{
+        width: 30%;
+        margin: 0;
+        padding: 0;
+    }
+    .abstract .figure figure{
         width:100%;
         padding: 0;
-        margin: 0;
+        margin: 3% 0;
         float: left;
         flex-direction: row;
         text-align: center;
     }
-    .abstract figcaption{
-        width: 98%;
-        padding: 0;
-        margin: 0;
-    }
+  
     .abstract figcaption p{
-        font-size: .8em;
+        font-size: .7em;
     }
     .abstract figcaption h3{
         font-size: .4em;
         text-align: center;
     }
-    .abstract figcaption h3{
-        font-size: .9em;
-        width: 100%;
-    }
-    .abstract {width:100%; padding: 0 ;
-        margin: 0;
-    padding-left: 10%;}
-    .abstract figure{
-        width:20%;
-    }
-    .abstract figure{
-   padding: 0;
-   margin: 0;}
-
+  
 
     /* section blog */
 
   
-.latestBlog{
-    display:table-column;
-    margin: 0 auto;
-}
-
-.blog .latestBlog{
-    display: flex;
-    margin:15% auto;
-    width: 100%;
-    flex-direction: column;
-    padding: 10% auto;
-}
-.latesBlog1, .latesBlog2, .latesBlog3{
-    width:90%;
-    margin-top: 5%;
-    padding-top: 10%;
-    margin: 0 auto;
-   
-}
 
 
-.blog{
-    display: flex;
-    margin: 0 auto;
-    clear:both;
-
-}
-.blog .latestBlog{
-    display: flex;
-    margin: .3% auto;
-    width: 100%;
-}
-.latesBlog1, .latesBlog2, .latesBlog3{
-    width:90%;
-    margin: 0 auto;
-   
-}
-.blogImage{
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
-}
-.latesBlog1 img, .latesBlog2 img, .latesBlog3 img {
-    width: 100%;
-    margin: 0 auto;
-}
- 
-.caption{
-    background-color: white;
-    width: 90%;
-    padding: 3% 2% 0 5%;
-    position: absolute;
-    bottom: 0;
-    left: 5%;
-    right: 5%;
-    
-}
-.caption a{
-    text-decoration: none;}
-.caption h6{
-    margin-bottom: 3%;
-    text-decoration: none;
-    color: #F6B20E;
-    font-family: 'Roboto Slab';
-    font-size: .9em;
-    text-align: left;
-    padding: .3% 0;
-}
-.caption p{
-    margin-top: 5%;
-    color: #333333;
-    font-family: 'Roboto Slab Light';
-    font-size: 1.1em;
-    text-align: left;
-    
-}
 .comments{
-    text-align: left;
-    padding: 0;
-    margin: 0;
+    margin:1% 0;
 }
 .comments p, .comments a{
-    color: #55545473;
-    font-size: .9em;
-    padding: .6% .2% 0 0;
-    text-align: left;
-    text-decoration: none;
+margin-right: 2%;
 
 }
 .readMore{
-    text-align: left;
-    padding: 0;
-    margin: 0;
-    position: relative;
-    left: 10%;
-    font-size:.7em;
-    font-weight: 600;
-    color:#333333;
-    font-family: 'Open Sans';
-    margin-top: 1%;
+font-size: .8em;
 }
 .readMore a{
     border-bottom: 1px #333333 solid;
@@ -340,37 +224,111 @@ nav .menuLinks a:hover{
 
 /* contact us section */
 
-.contactUsContent{
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    text-align: center;
-    float: none;
-    width: 100%;
-}
-.leftContentContacts{
-
-    display:flex;
-    margin: 5% auto;
-    width: 90%; 
-  
-}
 
 .leftContentContacts  #submeit{
-width: 70%;
+width: 50%;
 }
-.rightContentContacts a{
-   
+.socialContent{
     display: flex;
-   width: 80%;
-    font-size: 1em;
-    text-align: center;
+    flex-direction: column;
+    width: 90%;
+    box-sizing: border-box;
 }
-.first, .second, .third{
-    display: flex;
-    flex-direction: row;
+.social .socialContent h2{
+    font-size:1.2em;
 }
-.contactUsContent .fa-home, .contactUsContent .fa-envelope, .contactUsContent .fa-phone, .contactUsContent .fa-fax{
-display: flex;
+.socialContent p{
+font-size: 1.3em;
+width: 60%;
+margin: 0 auto;
+
+    font-size: .6em;
+    flex-wrap: wrap;
+    word-wrap: break-word;
 }
+.social .topPage{
+    left:85%;
+    z-index: 3;
 }
+
+}
+
+@media only screen and (max-width:646px){
+    .container{
+        width: 85%;
+    }
+    .allStore button{
+        width: 45%;
+        font-size: 1.2em;
+    }
+    .download .downloadApp button{
+        font-size: 1em;
+    }
+    .figure figcaption h3{
+        font-size:.9em;
+    }
+   .ContactUs p{
+       font-size: 1.1em;
+   }
+ .download  .newsletter h2{
+     font-size: .9em;
+ } 
+
+}
+@media only screen and (max-width:570px){
+.container{
+width: 95%;
+}
+    .leftHeader h1,.pricePayment .priceContent p ,.download .downloadApp h2  {
+        font-size: 1.4em;
+        line-height: 40px;
+    }
+    .rightContentServices h5,.social .socialContent h2,.services .rightContentServices  p{
+        font-size: .9em;
+    }
+    .leftHeader h5,.features p,.services p,.howItWork h4,.pricing p ,.teamMembers .container p {   
+        font-size: 1.2em;
+    }
+    .servicesContent .fa-rocket, .servicesContent .fa-desktop, .servicesContent .fa-html5 {
+    padding: 25%;
+    }
+    .priceListInformation p, .download .downloadApp button {
+        font-weight: normal;
+        font-size: .7em;
+    }
+    .ourPortifilio .button  {
+       width: 100%;
+ }
+ .ourPortifilio .button a {
+padding: 3%;
+ 
+}
+.caption a p{
+    font-size: .8em;
+}
+.comments p, .comments a,.readMore a{
+    font-size: .7em;
+}
+.figure figcaption,.figure figcaption h3 {
+    width: 100%;
+    font-size: .9em;
+    
+}
+.figure figcaption h3{
+    font-size: .6em;
+}
+.rightContentContacts h5{
+    font-size: 1.1em;
+}
+.TESTIMONIAL .about p{
+    padding-left: 10%;
+    width: 100%;
+}
+
+    .allStore button {
+        font-size: 1em;
+    }}
+    @media only screen and (max-width:470px){
+        .allStore button {
+            font-size: .8em;
+        }}

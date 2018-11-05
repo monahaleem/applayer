@@ -10,19 +10,19 @@
     <link rel="stylesheet" href="./css/phone.css">
     <link rel="stylesheet"  href="./css/normalize.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
-<body>
+<body  data-spy="scroll" data-target="#menuLinks" >
     <div  class="banner">  <!--class banner for main menu and banner section -->
-    </div><!-- <div class="banner">  class banner for main menu and banner section -->   
+    </div> <!-- <div class="banner">  class banner for main menu and banner section -->   
         <div   class="mainMenu"> 
               <nav class="container"> <!--start nav --><!--this the nav for menu links -->
                   <div class="logo"  > <!--web site logo -->
                       <img src="./images/logo.png" alt="logo">
                     </div> <!--end of website logo -->
-                    <div class="buttonMenu" ><i class="fas fa-bars"></i></div>                    
-                    <div class="menuLinks"> 
+                    <!-- <div id="menubutton" class="buttonMenu" ><i class="fas fa-bars"></i></div>                  -->
+              
+                    <div  id="menuLinks" class="menuLinks"> 
                         <!--div  contain main menu links -->
 
                         <a class="MenuItems"  href="#HOME">HOME</a>
@@ -33,21 +33,25 @@
                         <a class="MenuItems"  href="#TESTIMONIAL">TESTIMONIAL</a>
                         <a class="MenuItems"  href="#BLOG">BLOG</a>
                         <a class="MenuItems"  href="#CONTACT">CONTACT</a>
-                        <div class='subMenu'><a class="MenuItems"  href="#PAGE">PAGE<span class="plus" onclick="plusMenu()">+</span></a>
-                            <div id="subMenu" class="subMenuContent">
-                             <a href="#">LIST WIDTH</a>
-                            <a href="#">LIST SIDEPAR</a>
-                   :         <a href="#">LIST SIDEPAR</a>
-                            <a href="#">LIST SIDEPAR</a>
-                                  
+                        <div class='subMenu'><a class="MenuItems"  href="#PAGE">PAGE<span class="plus" onclick="submenu(this)">+</span></a>
+                        <div id="subMenu" class="subMenuContent">
+                            <a class="submenuLink" href="#">LIST WIDTH</a>
+                            <a  class="submenuLink"  href="#">LIST SIDEPAR</a>
+                            <a  class="submenuLink"  href="#">LIST SIDEPAR</a>
+                            <a  class="submenuLink"  href="#">LIST SIDEPAR</a>          
                             </div>
                         </div>
-                    
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                          </a>
                     </div> <!-- end <div class="menuLinks">--- end of  main menu links -->
-                </nav>  <!-- end nav -->
+                        <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                          </a> -->
+                    </nav> <!-- end nav -->
                 
               </div> <!--end <div class="mainMenu">  -->
-         <header id="section1">  <!-- banner conent -->
+         <header id="HOME" id="section1">  <!-- banner conent -->
                  <div class="container" class="headerContent">
                      <div class="leftHeader"> <!-- left side of header -->
                          <div>
@@ -70,7 +74,7 @@
       
 
 <!--start section2 ""AWESOME FEATURES""" -->
-<section class="features">
+<section id="HOME"class="features">
     <div class="container">
         <h2>AWESOME FEATURES <i id="blot" class="fas fa-bolt"></i></h2>  
         <p>App Layers offers a wide range of features with Beautiful Design & Great Functionality. Lorem Ipsum is simply dummy text</p> 
@@ -114,7 +118,7 @@
 
                           <!--start section3 ""OUR SERVICES""" -->
 
-<section class="services" > 
+<section id="SERVICES" class="services" > 
     <div class="background">   
     <div class="container">
         <h2>OUR SERVICES <i id="blot2" class="fas fa-bolt"></i></h2>  
@@ -128,20 +132,22 @@
                         </div></div>
             <div class="rightContentServices">
                     <div class="first">
-                            <i class="fab fa-html5"></i>
+                            <div><i class="fab fa-html5"></i></div>
+                            <div>
                             <a href="#section1"><h5>HTML5 & CSS3</h5></a>
                             <p>Contrary to popular belief, Lorem Ipsum is not simply random text.s</p>
-                    </div>
-                    <div class="second">
-                            <i class="fas fa-desktop"></i>
-                            <a href="#section1"><h5> Fully Reponsive</h5></a>
-                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
-                    </div>
-                    <div class="third">
-                                <i class="fas fa-rocket"></i>
-                                <a href="#section1"><h5>Unlimited Support</h5></a>
-                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+             </div>
                         </div>
+                    <div class="second">
+                            <div>><i class="fas fa-desktop"></i></div>
+                            <div><a href="#section1"><h5> Fully Reponsive</h5></a>
+                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+                    </div></div>
+                    <div class="third">
+                               <div> <i class="fas fa-rocket"></i></div>
+                                <div><a href="#section1"><h5>Unlimited Support</h5></a>
+                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+                        </div></div>
                 </div>
             </div>
      </div></div>
@@ -154,7 +160,7 @@
  
 <!--start section4 ""HOW IT WORK""" -->
 
-<section class="howItWork" style=" background-color: white" > 
+<section id="SERVICES" class="howItWork" style=" background-color: white" > 
      
     <div class="container">
        <div class="address">
@@ -200,7 +206,7 @@
 
  <!-- section 5 our portifiio -->
 
-<section class="ourPortifilio">
+<section id="PORTFOLIO" class="ourPortifilio">
         <div class="container">
              <div>
                     <h2>OUR PORTFOLIO <i id="blot" class="fas fa-bolt"></i></h2>  
@@ -224,7 +230,7 @@
 
  <!-- section 6 PRICING TABLE -->
 
- <section class="pricing" > 
+ <section id="PRICING" class="pricing" > 
     <div class="background">   
     <div class="container">
         <h2>PRICING TABLE <i id="blot" class="fas fa-bolt"></i></h2>  
@@ -292,7 +298,7 @@
 <!-- section 7 our team members -->
 
 
-<section class="teamMembers" >
+<section id="TEAM" class="teamMembers" >
 
  <div class="container">
      <div>
@@ -301,7 +307,7 @@
      </div>
 
 <div class="team">
-  
+  <div class="figure1">
 <figure>
     <img src="./images/member_1.png" alt="member1">
     <figcaption>
@@ -316,8 +322,8 @@
             <h3>Marlon Leend</h3>
             <p>Head Phographer</p>
         </figcaption>
-</figure>
-
+</figure></div>
+<div class="figure2">
     <figure>
             <img src="./images/member_3.png" alt="member1">
             <figcaption>
@@ -331,7 +337,7 @@
      <h3>John Capone</h3>
     <p>Web Art Director</p>
    </figcaption>
-   </figure>
+   </figure></div>
 </div></div></div>
 </section>
 
@@ -341,7 +347,7 @@
 
 
 
- <section class="TESTIMONIAL ">
+ <section id="TESTIMONIAL" class="TESTIMONIAL ">
      <div class="background">
         <div class="container">
                     <h2>TESTIMONIAL<i id="blot2" class="fas fa-bolt"></i></h2>  
@@ -367,7 +373,7 @@
  <!-- section 9 OUR LATEST BLOG blog -->
 
  
-<section class="blog" >
+<section id="BLOG" class="blog" >
 
     <div class="container">
         <div>
@@ -385,12 +391,12 @@
                <a href="#section1"><p>Lorem Ipsum is simply dummy text of the printing.</p></a>
                <div class="comments">
                 <p> <i style=" font-size:.7em;" class="far fa-clock"></i> 20 March 2016</p>
-                 <a><i  style=" color: #f6B20E; font-size:.7em;"class="far fa-comments"></i> Comments</a>
+                 <a><i  style=" font-size:.7em;" class="far fa-comments"></i> Comments</a>
              </div>
            </div>
            </div>
            <div class="readMore">
-            <a href="#section1">Read More<i class="fas fa-long-arrow-alt-right"></i></a>
+            <a href="#section1">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
         </div>
            </div>
 
@@ -405,7 +411,7 @@
                     <a href="#section1"><p>Lorem Ipsum is simply dummy text of the printing.</p></a>
                     <div class="comments">
                         <p> <i style="font-size:.7em;" class="far fa-clock"></i> 20 March 2016</p>
-                         <a><i  style=" color: #f6B20E; font-size:.7em;" class="far fa-comments"></i> Comments</a>
+                         <a><i  style=" font-size:.7em;" class="far fa-comments"></i> Comments</a>
                      </div>
                 </div>
                 </div>
@@ -425,7 +431,7 @@
         <a href="#section1"><p>Lorem Ipsum is simply dummy text of the printing.</p></a>
     <div class="comments">
        <p> <i style="font-size:.7em;"class="far fa-clock"></i> 20 March 2016</p>
-        <a><i  style=" color: #f6B20E; font-size:.7em;" class="far fa-comments"></i> Comments</a>
+        <a><i  style=" font-size:.7em;" class="far fa-comments"></i> Comments</a>
     </div>
     </div>
     </div>
@@ -441,7 +447,7 @@
 
                           <!--start section10 ""contact us""" -->
 
-<section class="ContactUs" > 
+<section id="CONTACT" class="ContactUs" > 
     <div class="background">   
     <div class="container">
         <h2>CONTACT US <i id="blot" class="fas fa-bolt"></i></h2>  
@@ -489,7 +495,7 @@
                           <!--start section11 download ""comming soon""" -->
 
 
-<section class="download" style=" background-color: white" > 
+<section id="CONTACT" class="download" style=" background-color: white" > 
     <div class="container">
         <div class="appContent">
              <div class="newsletter"  >    
@@ -516,7 +522,7 @@
  <!--start section12 social media-->
 
 
- <footer class="social" style="background-color: black;" > 
+ <footer id="CONTACT" class="social" style="background-color: black;" > 
   <div class="container">
     <div class="socialContent">
      <h2>Share Your Favorite Mobile Apps With Your Friends</h2>
@@ -528,13 +534,14 @@
         <a href="https://www.google.com/"><i class="fab fa-youtube"></i></a>
         <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
     </div>      
-    <p>2016 &COPY; Copyright Applayers. All rights Reserved. Powered By Free<a href="https://www.pfind.com/goodies/applayers/" style="color: #f6B20E; text-decoration: none;"> AppLayers</a> Template from <a href="https://www.pfind.com/goodies/" style="color: #f6B20E; text-decoration: none;">pFind Goodies</a>.</p>                                 
+    <p>2016 &COPY; Copyright Applayers. All rights Reserved. Powered By Free
+        <a href="https://www.pfind.com/goodies/applayers/" style="color: #f6B20E; text-decoration: none;"> AppLayers</a> Template from <a href="https://www.pfind.com/goodies/" style="color: #f6B20E; text-decoration: none;">pFind Goodies.</a></p>                                 
     </div>
     </div>
     <div class="topPage"><i id="section1" class="fas fa-chevron-circle-up"></i></div>
  </footer>
-          
- <script src="./js/main.js"></script>
+    
+ <script src="js/main.js"></script>
         
 
 </body>

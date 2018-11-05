@@ -1,7 +1,10 @@
-function showMenu() {
-  const navs = document.querySelectorAll('.MenuItems')
-  
-  navs.forEach(nav => nav.classList.toggle('menuLinksToggleShow'));
-}
-document.querySelector('.buttonMenu')
-  .addEventListener('click', showMenu);
+function myFunction() {
+    var x = document.getElementById("menuLinks");
+    if (x.style.display === "block" ) {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";    
+      document.getElementsByClassName("icon").display="contents";
+      }
+  }
+  onkeydown="keydownFunction()" onkeyup="keyupFunction()"

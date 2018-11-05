@@ -1,21 +1,12 @@
-@media only screen and (max-width:992px) {
+@media only screen and (max-width:993px) {
 
-    section{
-    width: 100%;
+ 
+    .container{
+    width:80%;
+    max-width:992px;
     margin: 0 auto;
     padding: 0;
 }
-
-.container{
-    width:75%;
-    max-width:993px;
-    margin: 0 auto;
-    position: relative;
-    padding: 0;
-    
-
-}
-
 .mainMenu, nav, .logo{
     display: flex;
     float: none;
@@ -23,7 +14,6 @@
     flex-direction: column;
 }
 nav .menuLinks{
-
     width: 100%;
     margin: 0 auto;
     padding:0;
@@ -173,35 +163,72 @@ nav .menuLinks a{
 }
 
 /* section 3 */
-.services,.servicesContent {
-display: flex;
-flex-direction: column-reverse;
-width: 100%;
-margin: 0 auto;
-float: none;
-position: static;
+.services{
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.services h2{
+font-size:2.6em;
+}
+
+.services p{
+font-size:1.6em;
+line-height: 40px;
+margin-bottom: 1%;
+}
+.servicesContent{
+    display: flex;
+    flex-direction: column-reverse;
+   width: 90%;
 }
 
 .leftContentServices{
-    width:80%;
-    display:flex;
-    margin-top: 77%;
-}
-.rightContentServices{
-    width: 70%;
-    display: flex;
-    text-align: center;
+    margin: 0 auto;
+    width:95%;
     float: none;
-    justify-content: center;
-    flex-direction: column;
-    margin: 0 auto;
-}
-.servicesContent .fa-rocket, .servicesContent .fa-desktop, .servicesContent .fa-html5{
     display: flex;
-    justify-content: center;
-    text-align: center;
-    margin: 0 auto;
+    bottom: 0%;
+    position: absolute;
+
 }
+
+
+.rightContentServices{
+   width: 100%;
+  float: none;
+   margin: 0 auto 95% auto;
+   position: relatiave;
+bottom:10%;
+ 
+}
+.first, .second, .third{
+   width: 95%;
+   box-sizing: border-box;
+   float: left;
+}
+.servicesContent .fa-rocket, .servicesContent .fa-desktop, .servicesContent .fa-html5{   
+   border-radius: 50%;
+   margin: 0 ;
+   padding: 25%;
+   font-size: 1.8em;
+   text-align: center;
+}
+.rightContentServices a{
+font-size:1.5em;
+font-weight:700;
+text-align: left;
+margin-left: 10%;
+
+}
+.rightContentServices p{
+    margin-left: 10%;
+    width: 90%;
+text-align: left;
+font-size: 1em;
+line-height: 20px;
+}
+
+
 
 /* section4 how it work */
 .howItWork h2, .leftContent , .howItWork  #fa, .rightContent, .centerContent, .howItWorkContent{
@@ -265,6 +292,39 @@ position: static;
      margin: 0 auto;
 
  }
+ .teamMembers{
+    display:flex;
+    margin: 0 auto;
+}
+.teamMembers .team{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.teamMembers .team>div{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+}
+.teamMembers .team .figure1, .teamMembers .team  .figure2{
+    margin: 0;
+    padding: 0;
+    width:90%;
+    margin: 0 auto;
+   
+}
+.teamMembers .team figure{
+    margin: 0;
+    padding: 0;
+    margin: 2% auto;
+    width: 95%;
+    padding: 2%;
+}
  
  .latestBlog{
     display:table-column;
@@ -385,6 +445,9 @@ position: static;
     float: none;
     width: 100%;
 }
+.ContactUs p{
+    font-size:1.7em;
+}
 .leftContentContacts{
 
     display:flex;
@@ -392,9 +455,14 @@ position: static;
     width: 90%; 
   
 }
+.leftContentContacts form{
+    width: 95%; 
+}
 
 .leftContentContacts  #submeit{
-width: 90%;
+width: 35%;
+padding: 1% 2%;
+font-size:.9em;
 }
 .rightContentContacts{
     margin: 0;
@@ -415,6 +483,87 @@ width: 100%;
 .contactUsContent .fa-home, .contactUsContent .fa-envelope, .contactUsContent .fa-phone, .contactUsContent .fa-fax{
 display: flex;
 }
+.TESTIMONIAL p{
+    width: 90%;
+    font-size: 1.4em;
+    line-height:1.3em;
+    margin-bottom: 10%;
+}
+.TESTIMONIAL .abstract{
+    display: flex;
+    flex-direction: row;
+    width: 97%;
+}
+.TESTIMONIAL .about{
+    float: left;
+    margin-left: 5%;
+    width:80%;
+
+}
+.TESTIMONIAL figure p{
+    margin: 0;
+    padding: 0;
+}
+.TESTIMONIAL .about p{
+    font-size: .9em;
+}
+.blog p{
+    font-size: 1.5em;
+}
+
+
+.caption{
+ 
+    padding:1% 2% 0 3%;
+    left: 5%;
+    right: 5%;
+    
+}
+.caption h6{
+    font-size: .9em;
+    text-align: left;
+    font-weight: bolder;
+    padding: 0;
+padding-top: 3%;
+}
+.caption a p{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-size: 1.1em;
+    text-align: left;
+}
+.comments{
+    text-align: left;
+    padding:0;
+    padding-top: 1%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.comments p, .comments a{
+    font-size: .9em;
+    padding:  1% 5% 0 0;
+    margin: 0;
+    display: flex;
+
+}
+
+.comments .fa-clock,.comments .fa-comments{
+    padding: 0;
+    margin: 0;
+    padding-right:8%;
+}
+.readMore{
+    text-align: left;
+    padding: 0;
+    margin: 1% 0 0 0;
+    position: relative;
+    left: 8%;
+    font-size: .8em;
+    
+}
  
 /* download  section */
 .download, .appContent, .centerContent, .downloadApp{
@@ -422,23 +571,92 @@ display: flex;
     float: none;
     margin: 0 auto;
     flex-direction: column;
-    width: 98%;
     text-align: center;
 }
-.download .newsletter , .download .centerContent, .download .downloadApp{
+.download .newsletter , .download .centerContent{
 width: 95%;
 text-align: center;
 margin: 0;
 padding: 0;
-margin: 0 auto;
-
+margin:15% auto 0 auto;
 }
+.download .newsletter h2{
+    display: inline-flex;
+    padding: 0;
+    margin: 0;
+    font-size: 1.5em;
+    line-height: 60px;
+    font-weight: bolder;
+    margin: 0 auto;
+}
+.download .newsletter p,.download .newsletter input{
+    padding: 0;
+    margin: 0;
+    font-size: .8em;
+    line-height: 60px;
+    margin:1%  auto;
+}
+
+.newsletter button{
+    margin: 5% auto 0 auto;
+    padding: 0;
+    padding: 2% 3%;
+    width: 30%;
+}
+
 
 .download .centerContent img{
     width:50%;
+    display: flex;
 }
-
-
+.download .downloadApp{
+    margin: 0;
+    padding: 0;
+    width:95%;
+    margin: 0 auto;
+    padding: 2% 4%;
+    margin:0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.download .downloadApp button {
+    margin: 0;
+    padding: 0;
+    width: 40%;
+    padding:4% 2%;
+    font-size: 1.2em;
+    color: white;
+     display: flex;
+  margin: 0 auto;
+       }
+.download .downloadApp h2,p{
+    margin: 0 ;
+    margin: 2% auto ;
+    text-align: center;
+    font-size: 1em;
+  
+}
+.download .downloadApp h2{
+    margin-top: 5%;
+font-weight: bolder;
+font-size: 1.7em;
+}
+.download .downloadApp .button1{
+    margin: 3% auto;
+}
+/* -----------social----------- */
+.social .socialContent h2{
+    font-size: 1.5em;
+}
+.social pre{
+    font-size: .7em;
+}
+.social .topPage{
+    left: 90%;
+}
+   
+}
  /* ------------------------------- */
 
 @media only screen and (max-width:870px) {
@@ -446,11 +664,41 @@ margin: 0 auto;
         width: 80%;
         max-width: 870;
     }
+      .services h2{
+      font-size:2.6em;
+      }
+      .services p{
+      font-size:1.4em;
+      }  
+      .services .third{
+          margin-bottom: 15%;
+      }
+      .servicesContent .fa-rocket, .servicesContent .fa-desktop, .servicesContent .fa-html5{
+         padding: 40%;
+
+      }
+      .social pre{
+          font-size: .6em;
+      }
+    }
+      
 
 
 @media only screen and (max-width:814px){
 .container{
     width: 95%;
+    margin: 0 auto;
     max-width: 814px;
+}
+.services .rightContentServices{
+    margin-left: 8%;
+}
+.services .rightContentServices a,p{
+    margin:0;
+}
+.services .rightContentServices p{
+    font-size: .9em;
+    margin: 0;
+    font-family: "roboto slab";
 }
 }

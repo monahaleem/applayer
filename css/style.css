@@ -8,30 +8,23 @@
     font-weight: unset;
     padding: 0;
     margin: 0 auto;
-    font-stretch:expanded;
 }
 .container{
     width: 75%;
     max-width:1536px;
-    margin: 0 auto;
-    position: relative;
     padding: 0;
-
 }
 section{
     margin: 0 auto;
     width: 100%;
     display:block;
     background-color: white;
-
 }
-
 .banner{
-    margin: 0 auto;
-    display:flex;
+    display:content;
     width: 100%;
     background-image: url("../images/top_banner.png");
-   background-color:  rgba(1, 10, 28, 0.8);
+   background-color:  rgba(1, 10, 28, 0.699);
     background-size: cover;
     background-position: fixed;
     position: fixed;
@@ -66,13 +59,20 @@ section{
  
 }
  nav .menuLinks{
+     display: flex;
     width: 85%;
     vertical-align: middle;
-    float: left;
-
-
- 
+    float: left; 
 }
+ nav .buttonClick{
+ display: flex;
+    vertical-align: middle;
+    float: left;
+    flex-direction: column;
+    background-color: black;
+    width: 15%;
+
+} 
 
 div nav .menuLinks a{
     color: #ffffff;
@@ -89,35 +89,51 @@ div nav .menuLinks a:hover{
     /* min-height: 50px; */
     background-color:rgb(246, 178, 14);
 }
-.buttonMenu
-{
- display: none;   
+.icon{
+ display:none;;   
 }
 .plus {
-
     cursor: pointer;
     border: none;
 }
 
 .subMenu {
-    position: relative;
-    display: inline-block;
+    position: relative; 
+    display:inline-block;   
+}
+.subMenu:focus .subMenuContent,
+.subMenu:focus-within .subMenuContent,
+.subMenu:hover .subMenuContent {
+  visibility: visible; /* shows sub-menu */
+  opacity: 1;
+  z-index: 1;
+  transform: translateY(0%);
+  transition-duration: 2s;
+  transition-delay: 3s;
+  transition-delay: 0s, 0s, 5s; /* this removes the transition delay so the menu will be visible while the other styles transition */
 }
 
 .subMenuContent {
-    display: none;
+    visibility: hidden; /* hides sub-menu */
+    opacity: 0;
+    background-color: #000000ec;
     position: absolute;
-    background-color:#333333;
-    min-width: 160px;
-    overflow: auto;
-    z-index: 1;
+    top: 100%;
+    left: 0;
+    width: 140px;
+    transform: translateY(-2em);
+    z-index: -1;
+    transition-duration: 3s;
+    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
 }
 
-.subMenuContent a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+.subMenuContent .submenuLink{
+    width: 95%;
+    margin:  0 auto;
+    text-align: center;
+    font-size: 1em;
+
+    line-height: 30px;
 }
 
 .subMenu a:hover {background-color: #333333;}
@@ -229,7 +245,7 @@ div nav .menuLinks a:hover{
     text-align: center;
     display: flex;
     position: relative;
-    padding-bottom: 15vh;
+    padding-bottom: 15%;
  
 }
 .features h2,.howItWork h2, .ourPortifilio h2, .PricingTable h2, .teamMembers h2, .TESTIMONIAL h2, .blog h2, .ContactUs h2, .pricing h2{
@@ -400,6 +416,7 @@ color:#7F7F7F;
         margin: 0 auto;
         padding: 0;
         width: 100%;
+        height: auto;
         background-color:rgba(1, 10, 28, 0.8);
         padding-top: .1%;
         z-index: 0;
@@ -520,12 +537,6 @@ margin-bottom: 3%;
        text-align: center;
        margin-right:8%;
 
-   }
-
-.servicesContent .fa-rocket:hover, .servicesContent .fa-desktop:hover, .servicesContent .fa-html5:hover{
-    transition-duration: 0.5s;
-    transition-timing-function: ease-in;
-    transition-delay: 0.3s;
    }
    .rightContentServices a{
 display:block;
@@ -781,22 +792,26 @@ margin: 0 auto;
 /* 
 <!-- section 6 our portifiio --> */ */
 .teamMembers{
+     margin:0 auto;
     display: flex;
     background: white;
 }
-
+.teamMembers .container p{
+    font-size: 1.7em;
+}
 .team{
+    margin:0 auto;
     display: flex;
-    margin: 3vh auto;
+    margin: 3% auto;
     background-color: #FFFFFF;
     text-align: center;
 
 }
 .team >div{
-    max-width:24%;
-    width: 23%;
-    margin: 5vh auto;
-  
+display: flex;
+flex-direction: row;
+    width: 100%;
+    margin:0 auto;
 }
 .team figure{
     width: 100%;
@@ -804,20 +819,25 @@ margin: 0 auto;
     padding: 0;
 
 }
+.teamMembers .team figure figcaption h3{
+    font-size: 1.4em;
+    font-weight:bolder;
+}
+.teamMembers .team figure figcaption p{
+    font-size:1em;
+
+}
 .team figure img{
     width: 100%;
     padding: 0;
     margin: 0;
-
-
 }
 .team figcaption{
     border: 1px rgba(214, 214, 214, 0.548) solid;
     border-top: none;
-
 }
 .team  h3{
-    padding-top: 2vh ;
+    padding-top: 2%;
     font-family:'roboto slab';
     font-size: 1.7em;
     color: #333333;
@@ -1247,8 +1267,8 @@ position: relative;
 }
 .social .socialLinks{
     display:  flex;
-    width: 45%;
-    margin:6% auto 9.5% auto;
+    width: 55%;
+    margin:4% auto  6% auto;
     text-align: center;
 }
 .social .socialLinks a{
@@ -1256,6 +1276,16 @@ position: relative;
     text-decoration: none;
     margin: 0 auto;
     font-size: 1.3em;
+    line-height: 55px;
+    padding: 1% 3%;
+}
+.social pre{
+    font-size: 1em;
+}
+.social .socialLinks a:hover{
+  background-color: #F6B20E;
+  border-radius: 50%;
+  padding: 1% 3%;
 }
 .social .topPage{
     color: #F6B20E;
@@ -1296,6 +1326,7 @@ position: relative;
     width: 90%;
     max-width: 1380px;
 }
+
 .pricing h2{
     font-size: 2.2em;
 }
@@ -1315,12 +1346,26 @@ position: relative;
         width:95%;
         max-width: 1250px;
     }
-
+    .pricing h2{
+        font-size: 1.8em;
+    }
+    .pricing p{
+        font-size:1.6em;
+    }
+    .priceListInformation p{
+        font-size: .8em;
+    }
+    .pricePayment .priceContent p{
+        font-size: 1em;
+    }
+    .pricing button{
+        font-size: 1.4em;}
+}
 
     @media only screen and (max-width:1170px){
         .container {
             width: 85%;
-        max-width: 1160px;     
+        max-width: 1170px;     
  }
  nav .menuLinks {
      font-size:.8em;
@@ -1329,10 +1374,12 @@ position: relative;
      margin-right: 0;
      margin-right: 8%;
  }
- 
+ .pricing button{
+    font-size: 1.2em;
+}
  .leftHeader h1{
      font-size: 2.8em;
-     line height:50px;
+     line-height:50px;
      margin-bottom: 0;
      margin-bottom:4%;
  }
@@ -1363,5 +1410,55 @@ position: relative;
 font-size:.8em;
 line-height: 24px; 
 }
+.services p{
+    margin-bottom: 17%;
+}
 
+
+.rightContentServices a{
+    font-size: 1.2em;
+    font-weight:700;
+}
+.leftContentServices {
+    margin-right: 10%;
+
+}
+.leftContentContacts .image2{
+    width: 10%;
+    max-height:10%;
+}
+.caption p{
+    font-size: 1em;
+    padding: 0;
+}
+.comments p ,.commentsa{
+    font-size: .7em;
+    padding-top: 2px;
+    padding-right: 7px;
+}
+.readMore{
+    font-size: .8em;
+}
+.leftContentContacts  #submeit{
+    font-size: 1.3em;
+}
+.rightContentContacts a{
+    font-size: 1em;
     }
+    .download .newsletter h2,.downloadApp h2{
+        font-size: 1em;
+    }
+    .newsletter  button{
+        font-size: .9em;
+    }
+    .download .downloadApp button {
+        font-size: 1em;
+        padding: 8px 2px;
+        margin-top: 10%;
+    }
+.social pre{
+    font-size: .8em;
+}
+}
+
+    
