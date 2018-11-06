@@ -9,6 +9,9 @@
     padding: 0;
     margin: 0 auto;
 }
+.fixed{
+    background-color: #F6B20E;
+}
 .container{
     width: 75%;
     max-width:1536px;
